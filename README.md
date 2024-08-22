@@ -13,13 +13,13 @@
 
 
 
-O escopo do projeto:
+- O escopo do projeto:
 
 
-O plano de negócios: 
+- O plano de negócios: 
 
 
-A descrição das disciplinas envolvidas:
+- A descrição das disciplinas envolvidas:
 
 
-Tecnologias utilizadas:
+- Tecnologias utilizadas:
