@@ -1,19 +1,17 @@
 # Projeto-GrupoNoite-Projeto-PLANEJAMENTO-EM-INFORMATICA
 
-- Nome da empresa:
+- Nome da empresa: NextERP
 
   
-- Ramo da empresa:
+- Ramo da empresa: Adrimistrar negócios
 
   
-- Os serviços que a empresa oferecerá e as tecnologias que serão utilizadas:
+- Os serviços que a empresa oferecerá: Analisar dados e controle de vendas 
 
 
 - Equipes:
 
 
-
-- O escopo do projeto:
 
 
 - O plano de negócios: 
@@ -22,4 +20,4 @@
 - A descrição das disciplinas envolvidas:
 
 
-- Tecnologias utilizadas:
+- Tecnologias utilizadas: Iremos usar MySQL, Python, HTML, VISUAL STUDIO.
