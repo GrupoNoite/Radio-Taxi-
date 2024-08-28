@@ -12,11 +12,8 @@
 - Equipes:
 
 
-
-
-- O plano de negócios: 
-
-
+- O plano de negócios: NextERP é um processo complexo que envolve várias etapas, desde o planejamento até a implementação e manutenção.
+  
 - A descrição das disciplinas envolvidas:
 
 
