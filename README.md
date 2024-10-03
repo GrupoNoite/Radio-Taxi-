@@ -10,18 +10,18 @@
 
 
 - Equipes:
-- Audio Visual :
-   Lucas RA: 2224104938
-- Roterista (video e projeto):
-  Tielly RA: 2224104145
+- Video: Jhonata RA: 2224105510
 - Banco de dados:
   Vitoria RA: 2224103649
   Joyce RA: 2224100426
-- Programação:
-  Dony RA: 2224104098
-- Arte visual:
+- Segurança da informação:
   Maikon RA: 2224101911
-  Jhonata RA: 2224105510
+  Tielly Ra: 2224104145
+-  Redes de Computadores:
+  Lucas RA: 2224104938
+- Aprendizado de Máquina e Machine Learning e Ciência de Dados:
+  Tielly RA: 2224104145
+  Dony RA: 2224104098
 
 
 - O plano de negócios: NextERP é um processo complexo que envolve várias etapas, desde o planejamento até a implementação e manutenção.
