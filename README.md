@@ -1,4 +1,4 @@
-# Projeto-GrupoNoite-Projeto-PLANEJAMENTO-EM-INFORMATICA
+# Projeto NextERP
 
 - Nome da empresa: NextERP
 
