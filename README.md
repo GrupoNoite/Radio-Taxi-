@@ -1,37 +1,67 @@
-# Projeto NextERP
+# Projeto Rádio Táxi
 
-- Nome da empresa: NextERP
+**Nome da empresa:** Radio taxi 
 
-  
-- Ramo da empresa: Adrimistrar negócios
+**Ramo da empresa:** Transporte e Soluções de Mobilidade
 
-  
-- Os serviços que a empresa oferecerá: Analisar dados e controle de vendas 
+### Serviços Oferecidos
+- Transporte rápido e seguro
+- Análise de dados para otimização de rotas e controle de vendas
+
+### Equipes
+- **Vídeo:**
+
+Jhonata - RA: 2224105510
+
+- **Banco de Dados:**
+
+Vitoria - RA: 2224103649<br>
+ Joyce - RA: 2224100426<br>
+
+- **Segurança da Informação:**
+
+Maikon - RA: 2224101911<br>
+Tielly - RA: 2224104145<br>
+
+- **Rede de Computadores:**
+
+Lucas - RA: 2224104938<br>
+
+- **Aprendizado de Máquina, Machine Learning e Ciência de Dados:**
+
+Tielly - RA: 2224104145<br>
+Dony - RA: 2224104098<br>
 
 
-- Equipes:
-- Video: Jhonata RA: 2224105510
-- Banco de dados:
-  Vitoria RA: 2224103649
-  Joyce RA: 2224100426
-- Segurança da informação:
-  Maikon RA: 2224101911
-  Tielly Ra: 2224104145
--  Redes de Computadores:
-  Lucas RA: 2224104938
-- Aprendizado de Máquina e Machine Learning e Ciência de Dados:
-  Tielly RA: 2224104145
-  Dony RA: 2224104098
+### Plano de Negócios: Missão, Visão e Valores
+
+**Missão:**
+Facilitar a mobilidade urbana através de um serviço de radiotáxi eficiente, garantindo a melhor experiência para os passageiros.
+
+**Visão:**
+Ser a empresa líder em soluções de transporte por radiotáxi, reconhecida pela inovação no uso de tecnologia e pela excelência no atendimento.
+
+**Valores:**
+Inovação, transparência, eficiência e compromisso com a satisfação do cliente.
+
+### Descrição das Disciplinas Envolvidas
+- **Modelagem de Dados:**
+Criação de modelos para o ERP, incluindo estrutura de tabelas e relações entre entidades no banco de dados.
+
+- **Aprendizado de Máquina e Ciência de Dados (Python, Estatística e ML):**
+Desenvolvimento de soluções para otimização de rotas e análise de desempenho dos serviços.
+
+- **Segurança da Informação:**
+Planejamento e implementação de estratégias para garantir o uso seguro de dados e proteger as informações da empresa e dos clientes.
+
+- **Rede de Computadores:**
+Gerenciamento da infraestrutura de redes, garantindo comunicação eficiente e segura.
+
+### Tecnologias Utilizadas
+- MySQL
+- Python
+- HTML
+- Visual Studio
 
 
-- O plano de negócios: NextERP é um processo complexo que envolve várias etapas, desde o planejamento até a implementação e manutenção.
 
-  
-- A descrição das disciplinas envolvidas:
-* Modelagem de Dados: Crie modelos de dados para o ERP, incluindo a estrutura de tabelas e relações entre entidades no banco de dados.
-* Aprendizado de maquina: Planeja a arquitetura geral do sistema, definindo camadas de apresentação, lógica de negócios e acesso a dados.
-* Programação visual: Desenvolva protótipos da interface do usuário, assegurando que ela seja intuitiva e fácil de usar. Utilize ferramentas de design como Figma ou Sketch para criar mockups.
-* Segurança da informação: Arquiteta e mapear o uso seguro de acesso de dados.
-
-
-- Tecnologias utilizadas: Iremos usar MySQL, Python, HTML, VISUAL STUDIO.
