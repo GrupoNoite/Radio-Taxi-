@@ -1,5 +1,105 @@
-Implementação de Medidas de Segurança
+           Implementação de Medidas de Segurança
+                20 políticas de segurança
+
+1- Acesso aos Arquivos
+•	Só quem realmente precisa, tem permissão para acessar certos arquivos, dependendo do trabalho que faz.
+2- Login e Senha
+•	Para usar a rede e os arquivos da empresa, tem que fazer login com uma senha segura.
+3- Troca de Senhas
+•	Todo mundo tem que trocar sua senha a cada 3 meses (90 dias), e nada de usar a senha antiga!
+4- Trabalhar de Casa (ou fora)
+•	Quem acessar a rede da empresa de fora (tipo home office) tem que usar uma VPN segura.
+5- Acesso Restrito
+•	Algumas partes da rede e arquivos sensíveis são bloqueadas, só quem tem autorização pode entrar.
+6- Monitoramento de Rede
+•	Estamos de olho no que acontece na rede para pegar atividades estranhas, tipo tentativas de invasão.
+7- Registro de Acessos
+•	Toda vez que alguém mexer em sistemas ou arquivos importantes, a gente registra isso para controlar.
+8- Classificação de Arquivos
+•	Vamos organizar os arquivos em três tipos: públicos, restritos e confidenciais, para saber quem pode ver o quê.
+9- Dados Protegidos
+•	Dados mais sensíveis (como de clientes e motoristas) vão ser protegidos com criptografia, para evitar vazamentos.
+10- Uso de Aparelhos Pessoais
+•	Se for usar seu celular ou laptop pessoal para trabalho, tem que seguir as regras de segurança (tipo antivírus e criptografia).
+11- Backup
+•	Vamos fazer backup dos arquivos importantes todos os dias e guardar em um lugar seguro.
+12- Proteger contra Vírus
+•	Temos firewall e antivírus para evitar vírus, malwares e outros problemas.
+13- Aplicações Importantes
+•	Para acessar sistemas importantes (tipo de corridas ou financeiro), vai ser preciso usar uma segunda confirmação (MFA).
+14- Wi-Fi Seguro
+•	A rede Wi-Fi da empresa tem senha forte e os visitantes usam outra rede separada da nossa.
+15- Compartilhamento de Arquivos
+•	Se for compartilhar arquivos, use só plataformas seguras e nada de passar por pen-drives ou redes duvidosas.
+16- Acessos Temporários
+•	Acesso temporário a sistemas ou arquivos só com autorização, e ele expira automaticamente depois de um tempo.
+17- Baixar Arquivos da Internet
+•	Só pode baixar arquivos da internet de fontes confiáveis e com cuidado.
+18- Transferir Arquivos com Segurança
+•	Quando for mandar arquivos para fora ou entre sistemas, precisa ser de um jeito seguro, preferencialmente criptografado.
+19- Remover Acessos
+•	Quando alguém sair da empresa ou mudar de função, seus acessos serão cortados ou ajustados na hora.
+20- Acesso de Terceiros
+•	Quem não é da empresa, mas precisa acessar a rede ou os arquivos, tem que seguir as mesmas regras de segurança, com controle e monitoramento.
+
+             10 itens de uma Matriz GUT
+
+
+1- Acesso não autorizado a dados sensíveis
+•	Gravidade: 5 (pode gerar grandes prejuízos à reputação e segurança)
+•	Urgência: 5 (precisa ser resolvido imediatamente)
+•	Tendência: 4 (piora com o tempo, especialmente se for explorado)
+
+2- Falta de backup regular
+•	Gravidade: 5 (risco de perda total de dados importantes)
+•	Urgência: 4 (precisa ser resolvido rapidamente)
+•	Tendência: 5 (piora rapidamente com o tempo, aumentando a chance de perda)
+3- Uso de dispositivos pessoais sem regras de segurança (BYOD)
+•	Gravidade: 4 (pode comprometer a rede e os dados da empresa)
+•	Urgência: 4 (precisa de controle em curto prazo)
+•	Tendência: 4 (piora à medida que mais pessoas usam seus próprios dispositivos)
+
+4- Ausência de criptografia em dados confidenciais
+
+•	Gravidade: 5 (dados podem ser roubados ou vazados)
+•	Urgência: 4 (precisa ser resolvido logo)
+•	Tendência: 3 (o risco aumenta se não for implementado)
+
+5- Rede Wi-Fi insegura
+•	Gravidade: 4 (permite acesso não autorizado à rede da empresa)
+•	Urgência: 5 (precisa ser resolvido imediatamente)
+•	Tendência: 3 (piora com o tempo, com o aumento de usuários)
+6- Falha no controle de senhas
+•	Gravidade: 4 (senhas fracas ou repetidas podem ser exploradas por hackers)
+•	Urgência: 3 (precisa de atenção, mas não é uma emergência crítica)
+•	Tendência: 4 (piora com o tempo se as senhas não forem reforçadas)
+
+7- Acesso remoto sem VPN
+•	Gravidade: 3 (pode comprometer a segurança dos dados acessados fora da empresa)
+•	Urgência: 4 (precisa de solução rápida)
+•	Tendência: 4 (piora à medida que mais pessoas trabalham remotamente)
+
+
+8- Falha em monitorar acessos à rede
+
+•	Gravidade: 4 (possíveis invasões e acessos suspeitos não serão detectados)
+•	Urgência: 3 (pode esperar um pouco, mas deve ser resolvido)
+•	Tendência: 4 (piora com o tempo, com maior chance de ataques)
+
+9- Ausência de autenticação multifator (MFA) em sistemas críticos
+•	Gravidade: 4 (acessos indevidos a sistemas importantes são um grande risco)
+•	Urgência: 3 (necessário, mas pode ser implementado gradualmente)
+•	Tendência: 4 (quanto mais tempo sem MFA, maior o risco)
+
+
+10- Desatualização de softwares de segurança
+
+•	Gravidade: 3 (pode expor a rede a ameaças)
+•	Urgência: 3 (não é uma emergência imediata, mas precisa de atenção)
+•	Tendência: 5 (se continuar desatualizado, os riscos crescem rapidamente)
 
 
 
-Matriz GUT
+                  Matriz GUT
+
+
