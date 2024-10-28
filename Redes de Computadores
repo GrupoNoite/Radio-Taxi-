@@ -1,7 +1,48 @@
 Montar a planta baixa de Rede da Empresa
 
 
-
 Configuração de IP de todos os equipamentos
+Estrutura de Rede da Empresa
+•	Recepção
+Conexões: Ponto de rede dedicado para computador de recepção e telefone IP.
+Equipamentos: Um computador com acesso à internet e ao sistema da empresa; telefone IP integrado ao sistema de telefonia, permitindo comunicação eficiente com clientes e outras áreas da empresa.
 
+•	Área de Atendimento Telefônico
+Conexões: Rede estruturada com ponto de rede para cada estação de trabalho, além de telefone IP para cada operador.
+Equipamentos: Computadores equipados com acesso ao sistema de despachos, painel de monitoramento de rotas, telefonia IP e fones de ouvido com cancelamento de ruído, garantindo clareza nas comunicações.
 
+•	Sala de Reuniões
+Conexões: Ponto de rede para equipamento de apresentação e sistema audiovisual.
+Equipamentos: TV ou projetor conectado à rede para videoconferências, sistema de áudio de alta qualidade e controle remoto para apresentações. Equipamentos de videoconferência para reuniões com clientes ou filiais.
+
+•	Sala de Gerência
+Conexões: Ponto de rede dedicado para computador e telefone IP.
+Equipamentos: Computador com acesso completo aos servidores da empresa, telefone IP para comunicação direta e rápida, e impressora de rede para documentos administrativos.
+
+•	Área de Convivência
+Conexões: Rede Wi-Fi dedicada para acesso casual dos funcionários, permitindo conexão de dispositivos pessoais.
+Equipamentos: Roteador ou ponto de acesso Wi-Fi dedicado, garantindo sinal forte e estável em toda a área.
+
+•	Banheiros
+Conexões: Nenhuma conexão necessária.
+
+•	Área Técnica/Equipamentos
+Conexões: Rede cabeada robusta para servidores, racks de equipamentos e centrais telefônicas.
+Equipamentos: Servidores de aplicação dedicados ao sistema de rádio táxi e servidores de banco de dados; roteadores e switches para gerenciamento de rede e distribuição de internet, assegurando conectividade em toda a empresa; firewall como sistema de segurança essencial; PABX IP para gerenciamento eficiente das linhas telefônicas; UPS (no-break) para garantir energia ininterrupta para servidores e equipamentos críticos.
+
+•	Estacionamento para Táxi
+Conexões: Opção de Wi-Fi externo para comunicação com os veículos, facilitando o contato entre motoristas e a central.
+Equipamentos: Antenas externas de Wi-Fi, se necessário, para garantir a conectividade contínua entre os táxis e a central de operações.
+
+•	Garagem para Manutenção
+Conexões: Ponto de rede para computador de gerenciamento de frota.
+Equipamentos: Computador dedicado para controle de manutenções, gestão de estoque de peças, registro de serviços realizados e monitoramento do estado da frota.
+
+Estrutura Geral da Rede
+
+• Servidor Central: Equipamento vital responsável por gerenciar o sistema de despachos, manter a base de dados de clientes e motoristas e supervisionar o sistema de monitoramento dos veículos em tempo real.
+• Firewall: Fundamental para proteger a rede interna contra ameaças externas, implementando políticas de segurança e monitorando tráfego suspeito.
+• Switches: Dispositivos que distribuem a rede cabeada e conectam todas as áreas da empresa, assegurando velocidade e eficiência na comunicação.
+• Wi-Fi: Rede sem fio implementada em áreas que exigem mobilidade, como a área de convivência e possivelmente no estacionamento de táxis, garantindo que os funcionários permaneçam conectados.
+• Considerações Finais
+• Essa estrutura de rede foi projetada para atender às necessidades operacionais da empresa, garantindo eficiência, segurança e a capacidade de expansão futura. A integração de tecnologias de comunicação e gerenciamento permite uma operação fluida e produtiva, essencial para o sucesso do negócio.
