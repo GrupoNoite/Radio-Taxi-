@@ -1,8 +1,74 @@
 Exploração de Dados e Pré-processamento
 
+  key  fare_amount                                          pickup_datetime  \
+0    2009-06-15 17:26:21.0000001          4.5  2009-06-15 17:26:21 UTC   
+1    2010-01-05 16:52:16.0000002         16.9  2010-01-05 16:52:16 UTC   
+2   2011-08-18 00:35:00.00000049          5.7  2011-08-18 00:35:00 UTC   
+3    2012-04-21 04:30:42.0000001          7.7  2012-04-21 04:30:42 UTC   
+4  2010-03-09 07:51:00.000000135          5.3  2010-03-09 07:51:00 UTC   
+
+ pickup_longitude   pickup_latitude    dropoff_longitude     dropoff_latitude  \
+0        -73.844311        40.721319            -73.841610                   40.712278   
+1        -74.016048        40.711303            -73.979268                  40.782004   
+2        -73.982738        40.761270            -73.991242                  40.750562   
+3        -73.987130        40.733143            -73.991567                  40.758092   
+4        -73.968095        40.768008            -73.956655                  40.783762   
+
+passenger_count  
+0                1  
+1                1  
+2                2  
+3                1  
+4                1  
+
+
 
 
 Implementação de Modelos de Aprendizado de Máquina de Regressão Linear
+
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, r2_score
+
+np.random.seed(0)
+tempo_espera = 5 + 10 * np.random.rand(100, 1)  
+corridas = 200 - 10 * tempo_espera + np.random.randn(100, 1) * 5  
+
+X_train, X_test, y_train, y_test = train_test_split(tempo_espera, corridas, test_size=0.2, random_state=0)
+
+regressor = LinearRegression()
+regressor.fit(X_train, y_train)
+
+y_pred = regressor.predict(X_test)
+
+print("Coeficiente:", regressor.coef_)
+print("Intercepto:", regressor.intercept_)
+
+mse = mean_squared_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+print("Mean Squared Error:", mse)
+print("R² Score:", r2)
+
+plt.scatter(X_test, y_test, color='blue', label='Dados reais')
+plt.plot(X_test, y_pred, color='red', linewidth=2, label='Linha de Regressão')
+plt.title('Regressão Linear - Rádio Táxi')
+plt.xlabel('Tempo de Espera (min)')
+plt.ylabel('Número de Corridas')
+plt.legend()
+plt.show()
+
+
+
+
+ 
+
+
+
+
+
+
 
 
 
