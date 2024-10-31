@@ -73,3 +73,52 @@ plt.show()
 
 
 Implementação de Modelos de Aprendizado de Máquina de Classificação
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, classification_report
+import matplotlib.pyplot as plt
+
+# Carregar dados de exemplo
+df = pd.DataFrame({
+    "valor da tarifa": [4.5, 16.9, 5.7, 7.7, 5.3],
+    "longitude de coleta": [-73.844311, -74.016048, -73.982738, -73.987130, -73.968095],
+    "latitude de retirada": [40.721319, 40.711303, 40.761270, 40.733143, 40.768008],
+    "longitude de desembarque": [-73.841610, -73.979268, -73.991242, -73.991567, -73.956655],
+    "latitude de desembarque": [40.712278, 40.782004, 40.750562, 40.758092, 40.783762],
+    "contagem de passageiros": [1, 1, 2, 1, 1]
+})
+
+# Definir a variável alvo (1 para alta demanda, 0 para baixa demanda com base na tarifa)
+df['demanda_alta'] = df['valor da tarifa'].apply(lambda x: 1 if x > 10 else 0)
+
+# Definir as features e a variável alvo
+X = df[['longitude de coleta', 'latitude de retirada', 'longitude de desembarque', 'latitude de desembarque', 'contagem de passageiros']]
+y = df['demanda_alta']
+
+# Dividir os dados em treino e teste
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+
+# Instanciar o modelo de classificação
+model = RandomForestClassifier()
+model.fit(X_train, y_train)
+
+# Fazer previsões
+y_pred = model.predict(X_test)
+
+# Avaliar o modelo
+accuracy = accuracy_score(y_test, y_pred)
+print(f'Acurácia: {accuracy}')
+print(classification_report(y_test, y_pred))
+
+# Gráfico de importância das features
+importances = model.feature_importances_
+plt.barh(X.columns, importances)
+plt.xlabel('Importância das Variáveis')
+plt.ylabel('Variáveis')
+plt.title('Importância das Variáveis no Modelo de Classificação')
+plt.show()
+
+
+
