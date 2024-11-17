@@ -1,4 +1,3 @@
-# Projeto Rádio Táxi
 ![Logo RádioTáxi](https://github.com/user-attachments/assets/a68d20de-3acb-495f-adf6-9713909bf827)
 
 **Nome da empresa:** Radio taxi 
