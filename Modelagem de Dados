@@ -1,63 +1,88 @@
-Modelagem Conceitual
-
-
-Modelagem Lógica e Normalização
-Transformação do modelo conceitual em um modelo lógico:
+Entregar Dicionário de Dados uma simulação de cadastro
 
 CREATE TABLE Clientes (
-    id_cliente INT PRIMARY KEY AUTO_INCREMENT,
-    nome_cliente VARCHAR(100) NOT NULL,
-    logradouro VARCHAR(150),
-    bairro VARCHAR(100),
-    cidade VARCHAR(100),
-    estado CHAR(2),
-    telefone VARCHAR(20),
-    UNIQUE(nome_cliente, telefone)
+id_cliente INT PRIMARY KEY,
+nome_cliente VARCHAR(100) NOT NULL,
+logradouro VARCHAR(150),
+bairro VARCHAR(100),
+cidade VARCHAR(100),
+estado VARCHAR(2),
+telefone VARCHAR(20),
+UNIQUE(nome_cliente, telefone)
 );
+
 CREATE TABLE Cooperados (
-    id_cooperado INT PRIMARY KEY AUTO_INCREMENT,
-    nome_cooperado VARCHAR(100) NOT NULL,
-    logradouro VARCHAR(150),
-    bairro VARCHAR(100),
-    cidade VARCHAR(100),
-    estado CHAR(2),
-    numero_carteira VARCHAR(20),
-    validade_carteira DATE,
-    categoria_profissional VARCHAR(10)
+id_cooperado INT PRIMARY KEY,
+nome_cooperado VARCHAR(100),
+logradouro VARCHAR(150),
+bairro VARCHAR(100),
+cidade VARCHAR(100),
+estado VARCHAR(3),
+numero_carteira VARCHAR(20),
+validade_carteira DATE,
+categoria_profissional VARCHAR(10)
 );
+
 CREATE TABLE Veiculos (
-    id_veiculo INT PRIMARY KEY AUTO_INCREMENT,
-    placa_veiculo VARCHAR(10) NOT NULL,
-    modelo VARCHAR(50),
-    fabricante VARCHAR(50),
-    cor VARCHAR(30),
-    id_cooperado INT,
-    FOREIGN KEY (id_cooperado) REFERENCES Cooperados(id_cooperado)
+id_veiculo INT PRIMARY KEY,
+placa_veiculo VARCHAR(10) NOT NULL,
+modelo VARCHAR(50),
+fabricante VARCHAR(50),
+cor VARCHAR(30),
+id_cooperado INT,
+FOREIGN KEY (id_cooperado) REFERENCES Cooperados(id_cooperado)
 );
+
 CREATE TABLE Corridas (
-    id_corrida INT PRIMARY KEY AUTO_INCREMENT,
-    id_cliente INT,
-    endereco_inicio VARCHAR(150),
-    endereco_fim VARCHAR(150),
-    cidade_inicio VARCHAR(100),
-    estado_inicio CHAR(2),
-    cidade_fim VARCHAR(100),
-    estado_fim CHAR(2),
-    data_hora_inicio DATETIME,
-    data_hora_fim DATETIME,
-    telefone_contato VARCHAR(20),
-    id_cooperado INT,
-    id_veiculo INT,
-    FOREIGN KEY (id_cliente) REFERENCES Clientes(id_cliente),
-    FOREIGN KEY (id_cooperado) REFERENCES Cooperados(id_cooperado),
-    FOREIGN KEY (id_veiculo) REFERENCES Veiculos(id_veiculo)
+id_corrida INT PRIMARY KEY,
+id_cliente INT,
+endereco_inicio VARCHAR(150),
+endereco_fim VARCHAR(150),
+cidade_inicio VARCHAR(100),
+estado_inicio VARCHAR(2),
+cidade_fim VARCHAR(100),
+estado_fim VARCHAR(2),
+data_hora_inicio DATE,
+data_hora_fim DATE,
+telefone_contato VARCHAR(20),
+id_cooperado INT,
+id_veiculo INT,
+FOREIGN KEY (id_cliente) REFERENCES Clientes(id_cliente),
+FOREIGN KEY (id_cooperado) REFERENCES Cooperados(id_cooperado),
+FOREIGN KEY (id_veiculo) REFERENCES Veiculos(id_veiculo)
 );
+INSERT INTO Clientes (id_cliente, nome_cliente, logradouro, bairro, cidade, estado, telefone) 
+VALUES (1, 'Tielly Oliveira', 'Rua Condi de itaguai 299', 'Real Parque', 'São Paulo', 'SP', '11962218546');
 
+INSERT INTO Clientes (id_cliente, nome_cliente, logradouro, bairro, cidade, estado, telefone) 
+VALUES (2, 'Joyce Hessel', 'Rua Paulo Bourrol 280', 'Morumbi', 'São Paulo', 'SP', '11985496317');
 
+INSERT INTO Clientes (id_cliente, nome_cliente, logradouro, bairro, cidade, estado, telefone) 
+VALUES (3, 'Vitoria Fernandes', 'Av. Giovanni Gronchi, 5819', 'Paraisopolins', 'São Paulo', 'SP', '11974365219');
 
+INSERT INTO Cooperados (id_cooperado, nome_cooperado, logradouro, bairro, cidade, estado, numero_carteira, validade_carteira, categoria_profissional) 
+VALUES (1, 'Adonias Gomes', 'Rua D, 321', 'Centro', 'São Paulo', 'SP', '123456789', TO_DATE('09/06/1993', 'DD/MM/YYYY'), 'Motorista');
 
+INSERT INTO Cooperados (id_cooperado, nome_cooperado, logradouro, bairro, cidade, estado, numero_carteira, validade_carteira, categoria_profissional) 
+VALUES (2, 'Jhonata Porto', 'Av. E, 654', 'Vila Mariana', 'São Paulo', 'SP', '987654321', TO_DATE('14/10/1999', 'DD/MM/YYYY'), 'Motorista');
+    
+INSERT INTO Cooperados (id_cooperado, nome_cooperado, logradouro, bairro, cidade, estado, numero_carteira, validade_carteira, categoria_profissional) 
+VALUES (3, 'Lucas Oliveira', 'Rua F, 987', 'Moema', 'São Paulo', 'SP', '456789123', TO_DATE('20/03/2003', 'DD/MM/YYYY'), 'Motorista');
 
+INSERT INTO Veiculos (id_veiculo, placa_veiculo, modelo, fabricante, cor, id_cooperado) 
+VALUES (1, 'ABC1234', 'Corolla', 'Toyota', 'Preto', 1);
 
+INSERT INTO Veiculos (id_veiculo, placa_veiculo, modelo, fabricante, cor, id_cooperado) 
+VALUES (2, 'DEF5678', 'Civic', 'Honda', 'Prata', 2);
 
+INSERT INTO Veiculos (id_veiculo, placa_veiculo, modelo, fabricante, cor, id_cooperado) 
+VALUES (3, 'GHI9101', 'Onix', 'Chevrolet', 'Branco', 3);
 
-Entregar Dicionário de Dados uma simulação de cadastro
+INSERT INTO Corridas (id_corrida, id_cliente, endereco_inicio, endereco_fim, cidade_inicio, estado_inicio, cidade_fim, estado_fim, data_hora_inicio, data_hora_fim, telefone_contato, id_cooperado, id_veiculo) 
+VALUES (1, 1, 'Rua Condi de Itaguai 299', 'Rua Monte Alegre 984', 'São Paulo', 'SP', 'São Paulo', 'SP', TO_DATE('2024-11-01 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_DATE('2024-11-01 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), '11962218546', 1, 1);
+
+INSERT INTO Corridas (id_corrida, id_cliente, endereco_inicio, endereco_fim, cidade_inicio, estado_inicio, cidade_fim, estado_fim, data_hora_inicio, data_hora_fim, telefone_contato, id_cooperado, id_veiculo)
+VALUES (2, 2, 'Rua Paulo Bourrol 280', 'Av. Giovanni Gronchi 5819', 'São Paulo', 'SP', 'São Paulo', 'SP', TO_DATE('2024-11-02 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_DATE('2024-11-02 09:30:00','YYYY-MM-DD HH24:MI:SS'), '11985496317', 2, 2);
+
+INSERT INTO Corridas (id_corrida, id_cliente, endereco_inicio, endereco_fim, cidade_inicio, estado_inicio, cidade_fim, estado_fim, data_hora_inicio, data_hora_fim, telefone_contato, id_cooperado, id_veiculo)
+VALUES (3, 3, 'Av. Giovanni Gronchi, 5819', 'Rua Condi de Itaguai 299', 'São Paulo', 'SP', 'São Paulo', 'SP', TO_DATE('2024-11-03 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_DATE('2024-11-03 10:40:00','YYYY-MM-DD HH24:MI:SS'), '11974365219', 3, 3);
