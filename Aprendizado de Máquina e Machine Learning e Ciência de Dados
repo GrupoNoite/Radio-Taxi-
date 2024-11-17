@@ -59,7 +59,7 @@ plt.ylabel('Número de Corridas')
 plt.legend()
 plt.show()
 
-
+![Regressão Linear](https://github.com/user-attachments/assets/3be98f79-2aac-4bd3-bef3-615a427f081d)
 
 
  
